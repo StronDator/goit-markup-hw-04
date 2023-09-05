@@ -568,6 +568,10 @@ svg {
   /* Box model */
   display: flex;
   gap: 16px;
+}
+
+.social-media-list-item {
+  /* Box model */
   width: 40px;
   height: 40px;
 }
