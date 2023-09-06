@@ -181,7 +181,6 @@ svg {
 
   /* Typography */
   color: var(--accent-gray);
-  font-weight: 500;
   letter-spacing: 0.02em;
 
   /* Transition */
@@ -199,10 +198,11 @@ svg {
 .studio-link {
   /* Positioning */
   position: relative;
-  color: var(--pressed);
 }
 
-.studio-link::after {
+.studio-link:hover::after,
+.studio-link:focus::after,
+.studio-link:active::after {
   /* Positioning */
   position: absolute;
   left: 0;
@@ -214,6 +214,9 @@ svg {
   content: '';
   width: 100%;
   height: 4px;
+  color: var(--pressed);
+
+  /* Visual */
   border-radius: 2px;
   background: var(--pressed);
 }
